@@ -1,6 +1,6 @@
 # BinaryvsLinear
 
-[Live Demo](www.binarysearch.herokuapp.com)
+[Live Demo](https://www.binarysearch.herokuapp.com)
 
 An extension of my binary search visualizer that compares a binary search to a linear search. 
 
