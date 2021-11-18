@@ -1,6 +1,10 @@
+const gridMinimum = 1;
+const gridMaximum = 100;
+
 let numbers = [];
 let numbers2 = [];
-for (let i = 1; i < 101; i++) {
+
+for (let i = gridMinimum; i <= gridMaximum; i++) {
   numbers.push(i);
   numbers2.push(i);
 }
