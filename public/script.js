@@ -12,7 +12,7 @@ numbers.forEach((number, index) => {
     "grid2"
   ).innerHTML += `<div class ='node' id='nodeb${number}'>${number}</div>`;
 });
-let runningCheck = false;
+
 const binarySearchCall = () => {
   Clear();
   const targetnum = document.getElementById("target").value;
