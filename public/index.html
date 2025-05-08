@@ -3,29 +3,38 @@
 <head>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="favicon.ico" />
-    <meta name="description"
-        content="This is a binary vs. linear search visualizer" />
-        <title>Binary Search visualizer</title>
+    <meta name="description" content="This is a binary vs. linear search visualizer" />
+    <title>Search Algorithm Visualizer</title>
 </head>
 <body>
+    <header>
+        <h1>Search Algorithm Visualizer</h1>
+        <p>Compare how binary search and linear search work through visualization</p>
+    </header>
+    
     <div class="center">
-        <h2>Enter a target number to see binary vs linear search<br></h2>
-
         <form>
-            <input type="number" id="target"></input><br><br>
-            <button type="button" onclick="binarySearchCall()">Calculate</button>
-            <button type="button" onclick="Clear()">Clear</button><br>
-            <div id='answer'><br>Answer:</div>
+            <h2>Enter a target number (1-100)</h2>
+            <input type="number" id="target" min="1" max="100" placeholder="Enter number..."></input>
+            <div class="button-group">
+                <button type="button" onclick="binarySearchCall()">Start Search</button>
+                <button type="button" onclick="Clear()" class="clear-btn">Reset</button>
+            </div>
+            <div id='answer'><br>Answer: </div>
         </form>
     </div>
+    
     <div class="flex">
-        <div id="grid">
+        <div class="grid-container">
+            <h3 class="grid-title">Binary Search</h3>
+            <div id="grid"></div>
         </div>
-        <div id="grid2">
+        <div class="grid-container">
+            <h3 class="grid-title">Linear Search</h3>
+            <div id="grid2"></div>
         </div>
     </div>
 
+    <script src="script.js"></script>
 </body>
-<script src="script.js"></script>
-
 </html>
