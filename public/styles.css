@@ -88,8 +88,8 @@ input[type="number"] {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   background-color: #303030;
   color: white;
-  width: 55px;
-  height: 55px;
+  width: 60px;
+  height: 60px;
   outline: 1px solid rgba(255, 255, 255, 0.1);
   float: left;
   display: flex;
@@ -107,8 +107,8 @@ input[type="number"] {
 #grid2 {
   padding: 20px;
   margin: 0;
-  width: 550px;
-  height: 550px;
+  width: 600px;
+  height: 600px;
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 5px;
   overflow: hidden;
@@ -171,9 +171,9 @@ input[type="number"] {
   position: absolute;
   top: 4px;
   left: 50%;
-  font-size: 0.75rem;
+  font-size: 0.6rem;
   background: rgba(0, 0, 0, 0.6);
-  padding: 2px 5px;
+  padding: 1px 1px;
   border-radius: 3px;
   transform: translateX(-50%);
 }

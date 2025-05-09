@@ -123,7 +123,7 @@ const binarySearch = (array, target, min, max) => {
     return mid;
   } else if (mid < target) {
     elem.style.backgroundColor = "#590c0c";
-    elem.innerHTML = `<span class="direction">Too small →</span>`;
+    elem.innerHTML = `<span class="direction">Too small -></span>`;
 
     const timeoutId = setTimeout(() => {
       binarySearch(array, target, mid + 1, max);
@@ -131,7 +131,7 @@ const binarySearch = (array, target, min, max) => {
     timeouts.push(timeoutId);
   } else if (mid > target) {
     elem.style.backgroundColor = "#590c0c";
-    elem.innerHTML = `<span class="direction">← Too large</span>`;
+    elem.innerHTML = `<span class="direction"><- Too large</span>`;
 
     const timeoutId = setTimeout(() => {
       binarySearch(array, target, min, mid - 1);
