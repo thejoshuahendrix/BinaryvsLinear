@@ -16,6 +16,11 @@
         <form>
             <h2>Enter a target number (1-100)</h2>
             <input type="number" id="target" min="1" max="100" placeholder="Enter number..."></input>
+            <div class="speed-control">
+              <label for="speed">Animation Speed:</label>
+              <input type="range" id="speed" min="100" max="2000" value="1000" step="100">
+              <span id="speed-value">1.0s</span>
+            </div>
             <div class="button-group">
                 <button type="button" onclick="binarySearchCall()">Start Search</button>
                 <button type="button" onclick="Clear()" class="clear-btn">Reset</button>
@@ -24,13 +29,28 @@
         </form>
     </div>
     
+    <div class="legend">
+        <div class="legend-item">
+            <div class="legend-color" style="background-color: #838718;"></div>
+            <span>Checking</span>
+        </div>
+        <div class="legend-item">
+            <div class="legend-color" style="background-color: #590c0c;"></div>
+            <span>Not Found</span>
+        </div>
+        <div class="legend-item">
+            <div class="legend-color" style="background-color: #4CAF50;"></div>
+            <span>Found!</span>
+        </div>
+    </div>
+    
     <div class="flex">
         <div class="grid-container">
-            <h3 class="grid-title">Binary Search</h3>
+            <h3 class="grid-title" id="grid-title-binary">Binary Search: 0 steps</h3>
             <div id="grid"></div>
         </div>
         <div class="grid-container">
-            <h3 class="grid-title">Linear Search</h3>
+            <h3 class="grid-title" id="grid-title-linear">Linear Search: 0 steps</h3>
             <div id="grid2"></div>
         </div>
     </div>
